@@ -1,37 +1,77 @@
+import java.util.*;
 class Main {
   public static void main(String[] args) {
+    System.out.println("--> Utilisation de collections = ArrayList");
 
-  // ----- Compter de 1 à 10
-    System.out.println("Compter de 1 à 10 :");
+    // ---- création d'une liste de patients
+    ArrayList<Patient>  lPatients = new ArrayList<Patient>();
+    // la méthode "add" de la classe ArrayListe permet
+    //   d'ajouter un elt en fin de tableau
+    lPatients.add(new Patient("Dupont","Jean",1.78, 65));
+    lPatients.add(new Patient("Durand","Leon",1.83, 110));
+    lPatients.add(new Patient("Leroy","Leon",1.74, 85));
+    // --- affichage de la liste
+    System.out.println("--> liste initiale : ");
+    
 
+    // --- calcul du poids moyen
+    System.out.println("--> poids moyen : ");
+    
+    // --- ajout d'un patient si pas présent
+    System.out.println("--> ajout fait : ");
+    
+    // --- ajout d'un patient déjà présent
+    System.out.println("--> ajout fait : ");
 
-  // ----- Compter de 0 à 100 par dizaine
-    System.out.println("Compter de 0 à 100 par 10 :");
-
-
-  // ---- Dans l’intervalle [1,50], nb divisibles par 3 et/ou 5
-    System.out.println("Nombre divisible par 3 et/ou 5");
-
-
-  // ---- table de multiplication
-    System.out.println("table de multiplication");
-
-
-  // ---- le nb de chiffre 2 entre 1 et 99
-    System.out.println("nb de chiffre 2");
-
-
-  // ---- qui suis-je (1) ?
-    System.out.println("Qui suis-je (1) ?");
-
-  // ---- qui suis-je (2) ?
-    System.out.println("Qui suis-je (2) ?");
-
-  // ---- le code du coffre fort
-    System.out.println("Code du coffre fort");
-
-  // ---- nombre 6 chiffres
-    System.out.println("Six chiffres");
-
+    // --- supprimer un patient présent dans la liste
+    System.out.println("--> supp faite : ");
+    
+    // --- supprimer un patient absent dans la liste
+    System.out.println("--> supp faite : ");
+   
+    // ---- suppresion des patients < à une taille données
+    System.out.println("--> liste apres suppression taille < 1.75 :");
+    
+    // --- tableau des "Leon"
+    System.out.println("--> liste des 'Leon' : ");
+    
   }
+  /* 
+   Afficher une liste de patients
+   données : 
+   résultat :
+  */
+
+  
+  /*
+   Poids moyen
+   données : 
+   résultats : 
+  */ 
+ 
+  /* 
+   Ajouter un patient dans une collection 
+     (en verifiant qu'il ne soit pas déjà présent)
+   données :       
+   résultats :     
+  */
+
+  /* 
+   supprimer un patient (en vérifiant qu'il soit présent)
+   données : 
+   résultats : 
+  */ 
+
+  /* 
+   supprimer des patients dont la taille < valeur donnée
+   données : 
+   résultats :  
+  */ 
+
+  /*
+   Créer un tableau contenant les patients portant un prénom donné
+   données : 
+   résultats : 
+  */
+
 }
